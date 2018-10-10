@@ -4,7 +4,7 @@
   "description": "Sollys Way Foundation",
   "main": "index.js",
   "scripts": {
-    "deploy": "deploy",
+    "deploy": "scripts/deploy",
     "start": "node server.js",
     "start-dev": "webpack -w & nodemon server",
     "test": "echo \"Error: no test specified\" && exit 1"
