@@ -1,6 +1,5 @@
 const express = require('express');
 const path = require('path');
-const PORT = 8080
 const app = express()
 module.exports = app
 
@@ -12,6 +11,6 @@ app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, './public/index.html'));
 });
 
-app.listen(PORT, () => {
-  console.log("server running on ", PORT)
+app.listen(8080, () => {
+  console.log("server running on ", 8080)
 })

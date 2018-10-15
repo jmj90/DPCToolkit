@@ -4,7 +4,7 @@ import React, { Component } from 'react'
 export default class Footer extends Component {
 
 
-  navClick(evt, data) {
+  navClick(evt) {
     let path = evt.target.innerHTML.split(' ')
     path = path[0].toLowerCase()
     window.location.href = `/${path}`
@@ -30,7 +30,7 @@ export default class Footer extends Component {
             <div className="footer-nav-text"> connect with us : </div>
             <img id="facebook-logo" src="/assets/facebook.png"/>
             <img id="instagram-logo" src="/assets/instagram.png"/>
-            <img id="email-logo" src="/assets/email.png"/>
+            <img id="email-logo" src="/assets/email.png" />
           </div>
       </div>
       <div className="copy">
