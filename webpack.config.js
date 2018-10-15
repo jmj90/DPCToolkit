@@ -1,8 +1,5 @@
-const isDev = process.env.NODE_ENV === 'development'
-//update
-
 module.exports = {
-  entry: ['babel-polyfill', './client/index.js'],
+  entry: './client/index.js',
   output: {
     path: __dirname,
     filename: './public/bundle.js'
