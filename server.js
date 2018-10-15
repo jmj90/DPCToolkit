@@ -6,7 +6,8 @@ if (process.env.NODE_ENV !== 'production') require('./secrets')
 module.exports = app
 //work
 
-app.use(express.static('public'));
+// static file-serving middleware
+app.use(express.static(path.join(__dirname, '..', 'public')))
 
 app.set('port', (process.env.PORT || 5000));
 

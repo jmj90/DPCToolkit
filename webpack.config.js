@@ -2,12 +2,10 @@ const isDev = process.env.NODE_ENV === 'development'
 //update
 
 module.exports = {
-  entry: './client/index.js',
-  mode: isDev ? 'development' : 'production',
+  entry: ['babel-polyfill', './client/index.js'],
   output: {
     path: __dirname,
-    publicPath: '/',
-    filename: 'bundle.js'
+    filename: './public/bundle.js'
   },
   devtool: 'source-maps',
   module: {
