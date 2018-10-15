@@ -6,7 +6,7 @@
   "scripts": {
     "deploy": "scripts/deploy",
     "start": "node server.js",
-    "start-dev": "webpack -w & nodemon server",
+    "start-dev": "webpack -w --display-error-details & nodemon server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "jake johnson",
