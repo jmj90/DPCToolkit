@@ -48,7 +48,7 @@ export default class Scholarships extends Component {
                   <li> A graduating senior with a minimum GPA of 2.5 on a 4.0 scale </li>
                   <li> A U.S. citizen and resident of Illinois </li>
                   <li> A history of extracurricular activities that demonstrates a willingness to serve the community </li>
-                  <li> Submit two letters of recommendation </li>
+                  <li> Submit a letter of recommendation </li>
                   <li> Submit an official high school transcript </li>
                   <li> Complete and sign application </li>
                   <li> Have suffered the loss of a parent or guardian </li>
