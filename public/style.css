@@ -59,6 +59,11 @@ h1 {
 
 /* Buttons ================================================================== */
 
+#donate-form {
+  display: flex !important;
+  flex-direction: column;
+}
+
 .button-standard {
   border: none;
   align-self: flex-end;
@@ -120,13 +125,14 @@ h1 {
 }
 
 .page-link-button {
+  font-family: 'Questrial', sans-serif;
   cursor: pointer;
   text-align: center;
-  font-size: 20px;
+  font-size: 18px;
   width: 200px;
-  padding: .7rem;
+  padding: .5rem;
   margin: 1.3rem;
-  background-image: linear-gradient(white, white);
+  background-image: linear-gradient(rgb(237, 237, 237), rgb(200, 200, 200));
   border: solid gray thin;
   border-radius: 5px;
 }
@@ -136,11 +142,12 @@ h1 {
 }
 
 #paypal-button {
+  font-family: 'Questrial', sans-serif;
   cursor: pointer;
   text-align: center;
   font-size: 24px;
   width: 200px;
-  padding: .2rem;
+  padding: .9rem;
   margin-top: 2rem;
   background-image: linear-gradient(#F7C557, #ffb116);
   border: solid gray thin;
@@ -1147,17 +1154,6 @@ cursor: pointer;
 
 /* ABOUT ===================================================================  */
 
-  .page-link-button {
-    cursor: pointer;
-    text-align: center;
-    font-size: 20px;
-    width: 200px;
-    padding: .7rem;
-    margin: 1.3rem;
-    background-image: linear-gradient(rgb(237, 237, 237), rgb(200, 200, 200));
-    border: solid gray thin;
-    border-radius: 5px;
-  }
 
   .split-content-left {
     width: auto;

@@ -36,8 +36,18 @@ export default class Donations extends Component {
                 Donations are accepted online via credit card and PayPal
                 (both can be accessed through PayPal), by phone, or by mail.
                 <br/>
-                <div id="paypal-button"> Donate Online </div>
-                <img id="paypal-cards" src="/assets/paypal-cards.png" />
+                <form id="donate-form" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                  <input type="hidden" name="cmd" value="_donations" />
+                  <input type="hidden" name="business" value="sharyn12345@comcast.net" />
+                  <input type="hidden" name="lc" value="US" />
+                  <input type="hidden" name="item_name" value="Solly's Way Foundation" />
+                  <input type="hidden" name="item_number" value="Online Donation" />
+                  <input type="hidden" name="no_note" value="0" />
+                  <input type="hidden" name="currency_code" value="USD" />
+                  <input type="hidden" name="bn" value="PP-DonationsBF:btn_donateCC_LG.gif:NonHostedGuest" />
+                  <button id="paypal-button" name="submit"> Donate Online </button>
+                  <img id="paypal-cards" src="/assets/paypal-cards.png" />
+                </form>
                   <div className="page-text-fine">
                     <center>
                       * A Paypal account is <b>not</b> required to make a donation
@@ -55,6 +65,7 @@ export default class Donations extends Component {
                   at the link below
                 </center>
               </div>
+
               <div className="page-link-button" onClick={() => window.location.href = `/contact`}>
                 contact
               </div>
