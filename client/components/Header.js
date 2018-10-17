@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import history from '../history'
 
 
 
@@ -13,7 +14,7 @@ navClick(evt, data) {
   render() {
     return (
       <div className="header-container">
-        <img id="header-logo" src="/assets/sollyslogo3.png"/>
+        <img id="header-logo" src="/assets/sollyslogo3.png" onClick={()=> history.push('/home')}/>
           <div id="header-nav">
             <div className="header-nav-item noselect" onClick={this.navClick} value="home">Home</div>
             <div className="header-nav-item noselect" onClick={this.navClick} value="about">About</div>

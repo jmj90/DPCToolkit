@@ -28,8 +28,14 @@ export default class Footer extends Component {
           <div className="footer-divider" />
           <div id="footer-connect-nav">
             <div className="footer-nav-text"> connect with us : </div>
-            <img id="facebook-logo" src="/assets/facebook.png"/>
-            <img id="instagram-logo" src="/assets/instagram.png"/>
+            <img
+              id="facebook-logo"
+              src="/assets/facebook.png"
+              onClick={() => window.location.href="https://www.facebook.com/pages/Sollys-Way-Foundation/593681160660088"}/>
+            <img
+              id="instagram-logo"
+              src="/assets/instagram.png"
+              onClick={() => window.location.href="https://www.instagram.com/sollysway/"}/>
             <img id="email-logo" src="/assets/email.png" />
           </div>
       </div>

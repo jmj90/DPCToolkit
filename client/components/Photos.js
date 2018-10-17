@@ -12,7 +12,7 @@ export default class Photos extends Component {
         <Header />
           <div className="sub-page-main donate">
             <div className="sub-page-content">
-              <div className="page-text-large">
+              <div className="page-text-large photo-title">
                 Photos
               </div>
               <br/>

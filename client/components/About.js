@@ -30,18 +30,18 @@ export default class About extends Component {
             <div className="page-text">
               <img id="placer1" src="/assets/photos/unclesol.jpg" />
               On June 3, 2012, Solly DeLaurentis, Jr. tragically lost his life
-              from a rare undetected heart defect that caused him to black
+              to a rare undetected heart defect that caused him to black
               out while on a motorcycle run benefiting Salvation Army charities.
-              At which time the lives of his wife and their three children were
-              drastically changed and their future was uncertain. The implications
-              of losing a parent at a young age, both emotionally and financially,
-              are one of life’s most difficult ordeals.
+              At that moment, the lives of his wife and their three children were
+              drastically changed forever. The implications of losing a parent at
+              a young age, both emotionally and financially, are one of life’s
+              most difficult ordeals.
               <br/>
               <div className="text-quote">
               "I have learned so many things this year about myself, my children,
               my endearing family, and ever so caring friends. It’s clear to me now
               how kind and generous people are. People care and want to make a
-              difference. This is where the idea of the Solly’s Way Foundation
+              difference. This is how the idea of the Solly’s Way Foundation
               came about." - Sharyn DeLaurentis
               </div>
             </div>
@@ -54,7 +54,7 @@ export default class About extends Component {
                       Solly's Way Foundation brings compassion to tragedy, and turns
                       tragedy to triumph, by providing college scholarships to students
                       who have lost a parent or guardian. The sudden loss of a parental
-                      figure triggers a braod range of family crises that may take
+                      figure triggers a broad range of family crises that may take
                       years to surmount. It is with our best efforts and dedication
                       to present these young adults with a greater chance for a
                       successful future.

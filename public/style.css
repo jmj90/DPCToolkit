@@ -81,10 +81,10 @@ h1 {
 }
 
 .donate-button {
-  background-image: linear-gradient(rgb(63, 255, 172), rgb(68, 255, 255));
+  background-image: linear-gradient(#F7C557, #ffb116);
   font-family: 'Questrial', sans-serif;
   font-weight: 300;
-  padding: 8px;
+  padding: 15px;
   color: black;
   margin-top: 3rem;
   margin-left: 58%;
@@ -170,6 +170,11 @@ h1 {
   align-items: center;
   justify-content: space-between;
   width: 100%
+
+}
+
+.breakpoint-container {
+  display: none;
 }
 
 
@@ -796,6 +801,10 @@ h1 {
   margin-right: 2rem;
 }
 
+#header-logo:hover {
+cursor: pointer;
+}
+
 #footer-logo {
   display: flex;
   max-height: 70px;
@@ -848,6 +857,566 @@ h1 {
   margin-top: .5rem;
   max-width: 100px;
 }
+
+/* IPHONE =================================================================== */
+/* ========================================================================== */
+@media only screen and (max-width: 800px) {
+
+/* LANDER HEADER ===========================================================  */
+
+
+  #mobile-menu {
+    /* z-index: 10; */
+  }
+
+  .header-container {
+    display: flex;
+    justify-content: center;
+    z-index: 5;
+    align-items: center;
+    background-size: contain;
+    border-bottom: solid black thin;
+    height: 80px;
+    background-color: white;
+    position: fixed;
+    width: 100vw;
+  }
+
+  #header-lander-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: contain;
+    border-bottom: solid black thin;
+    height: 80px;
+    background-color: white;
+    position: fixed;
+    width: 100vw;
+  }
+
+  #header-nav {
+    display: none;
+  }
+
+  #header-logo {
+    display: flex;
+    justify-content: center;
+    max-height: 60px;
+    margin-left: 3rem;
+    margin-top: 0;
+    margin-right: 10rem;
+  }
+
+  #hamburger-menu {
+    position: fixed;
+    top: 10px;
+    right: -10px;
+    margin-right: 1rem;
+    z-index: 7;
+    transition: all .3s ease;
+  }
+
+  #hamburger-menu.active {
+    right: -10px;
+  }
+
+  .hamburger {
+    padding: 0;
+  }
+
+  .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+    width: 30px!important;
+    height: 3px !important;
+    border-radius: 15px;
+    position: absolute;
+    transition-property: transform;
+    transition-duration: 0.15s;
+    transition-timing-function: ease;
+    background-color: #000 !important;
+  }
+
+  .hamburger.is-active {
+    background-color: #fff;
+  }
+
+  #menu {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    right: 0px;
+    top: 0px;
+    background-color: rgba(35, 35, 35, .9);
+    height: auto;
+    width: 0px;
+    z-index: 6;
+    overflow: hidden;
+    visibility: hidden;
+    transition: all 0.2s ease;
+    border-radius: 0px;
+  }
+
+  #menu.isactive {
+    position: fixed;
+    justify-content: center;
+    visibility: visible;
+    width: 100vw;
+    right: 0px;
+    transition: all 0.5s ease;
+  }
+
+  .menu-item {
+    cursor: pointer;
+    font-family: 'Questrial', sans-serif;
+    font-size: 18px;
+    color: white;
+    margin-right: 0rem;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
+
+  .clouds-parallax {
+    height: 91vh;
+  }
+
+  .lander-container {
+    min-height: 10px;
+    max-height: none;
+    width: 100vw;
+  }
+
+  .text-center-large {
+    font-family: "Playfair Display", serif;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1.8rem;
+    margin: 1rem;
+    margin-top: 11rem;
+    color: black;
+    max-width: 1000px;
+  }
+
+  .breakpoint-container {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: inline;
+    background-color: rgb(219, 255, 239);
+    border-top: solid black thin;
+  }
+
+  .breakpoint-container-2 {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: inline;
+    background-color: rgb(255, 253, 229);
+    border-top: solid black thin;
+  }
+
+  .breakpoint-button {
+    font-family: 'Questrial', sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: .8rem;
+    margin-bottom: 1rem;
+    width: 228px;
+    font-size: 16px;
+    background-image: linear-gradient(rgb(237, 237, 237), rgb(200, 200, 200));
+    border-radius: 6px;
+    border: solid black thin;
+  }
+
+  .breakpoint-icons {
+    max-width: 80px;
+    margin-bottom: 1rem;
+    margin-top: .5rem;
+  }
+
+  .breakpoint-text {
+    font-family: "Playfair Display", serif;
+    display: flex;
+    font-size: 18px;
+    text-align: center;
+    margin: 1rem .5rem 1rem .5rem;
+  }
+
+  .donate-button {
+    font-family: 'Questrial', sans-serif;
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(#F7C557, #ffb116);
+    font-weight: 300;
+    padding: 15px;
+    color: black;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 0;
+    width: 211px;
+    cursor: pointer;
+    border-radius: 5px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+
+
+  /* CONTACT =================================================================  */
+
+  .sub-page-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem 0 .8rem 0;
+    background-color: #22262A;
+    height: 100px;
+    width: 100vw;
+    font-size: 45px;
+    font-weight: bold;
+    color: white;
+  }
+
+  #contact-form {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100vw;
+  }
+
+  .form-slot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+  .form-input {
+    font-size: 18px;
+    height: 30px;
+    width: 100px;
+}
+
+  .form-input-2 {
+    font-size: 18px;
+    height: 30px;
+    width: auto;
+  }
+
+  .form-message {
+    width: 85%;
+    height: 150px;
+    resize: none;
+    font-size: 14px;
+  }
+
+  .form-label {
+    width: 80px;
+    margin-right: 0rem;
+    margin-left: .5rem;
+    margin-bottom: .5rem;
+    margin-top: .5rem;
+}
+
+  .button-standard {
+    border: none;
+    align-self: flex-end;
+    font-family: 'Questrial', sans-serif;
+    width: fit-content;
+    height: 35px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: white;
+    background-color: rgb(0, 127, 255);
+    margin-right: 2rem;
+    margin-top: 1.3rem;
+    margin-bottom: 2rem;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+
+  #first-last-form {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+/* ABOUT ===================================================================  */
+
+  .split-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+  }
+
+  .text-quote {
+    font-family: "Playfair Display", serif;
+    font-style: italic;
+    font-size: 24px;
+    margin: 1rem 0 1rem 0;
+    color: black;
+  }
+
+  #books {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    object-position: top;
+    margin-bottom: 2rem;
+    cursor: pointer;
+  }
+
+  #placer2 {
+    margin-top: 1rem;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+  }
+
+  #logo-about {
+    margin-top: 6rem;
+    max-width: 300px;
+  }
+
+  .subpage-header-title {
+    margin: 5rem 0rem 1rem 0rem;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .split-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100vw;
+  }
+
+  .page-text-large {
+    font-family: 'Lora', serif;
+    font-size: 25px;
+    margin: 1rem;
+}
+
+.photo-title {
+  margin-top: 10rem;
+}
+
+/* SCHOLARSHIPS ============================================================  */
+
+  .scholarship-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 7rem 0 1.8rem 0;
+    height: 100px;
+    font-size: 60px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 0 2px 10px black;
+  }
+
+  .scholarship-text-large {
+    font-family: 'Lora', serif;
+    line-height: 30px;
+    font-size: 24px;
+    color: white;
+    margin: 1rem;
+    text-align: center;
+    line-height: 35px;
+    text-shadow: 0 2px 10px black;
+  }
+
+  .subpage-header-title-special {
+    margin: 3rem 0rem 1rem 0rem;
+    width: auto;
+    padding: 1.6rem;
+    background-color: #1E2226;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .page-text {
+    font-family: 'Lora', serif;
+    line-height: 30px;
+    text-align: center;
+    margin: 1rem;
+    font-size: 16px;
+  }
+
+  #recipients-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-self: flex-start;
+    flex-wrap: wrap;
+    height: auto;
+  }
+
+  .container-information-list {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    font-size: 18px;
+    background-image: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.9)), url(/assets/college-classroom.jpg);
+    background-position: center;
+    background-blend-mode: darken;
+    padding: 2rem;
+    border-color: black;
+    border-style: solid;
+    color: white;
+  }
+
+
+/* FOOTER ==================================================================  */
+
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 100vw;
+  }
+
+  #footer-connect-nav {
+    width: fit-content;
+    font-size: 12px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer-nav-text {
+    font-size: 12px;
+  }
+
+  .footer-divider{
+    display: none;
+  }
+
+  #footer-logo {
+    display: relative;
+    max-height: 50px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .footer-nav-item {
+    font-family: 'Questrial', sans-serif;
+    color: white;
+    font-size: 12px;
+    margin-right: 0rem;
+    margin-left: 0rem;
+    margin-bottom: .8rem;
+  }
+
+  #footer-nav {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    align-items: center;
+    width: 93vw;
+    margin-top: 2rem;
+    justify-content: space-between;
+  }
+
+  .copy {
+    font-size: 12px;
+  }
+
+  #banner-img {
+    max-width: 400px;
+  }
+
+  .text-box {
+    font-family: 'Lora', serif;
+    background-color: rgba(255,255,255,.6);
+    padding: 2rem;
+    font-size: 1.1rem;
+  }
+
+  .text-center-medium {
+    font-family: "Playfair Display", serif;
+    display: inline;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    text-align: center;
+    border-bottom: 1px solid black;
+    padding-bottom: .3rem;
+    font-size: 30px;
+    margin: 1rem;
+    color: black;
+    max-width: 1000px;
+  }
+
+  .breakpoint-image-banner {
+    height: 100px;
+    width: 90vw;
+    object-fit: cover;
+  }
+
+  .donation-text-a {
+    font-family: "Playfair Display", serif;
+    position: relative;
+    top: 0;
+    font-size: 20px;
+    padding-left: 1rem;
+  }
+
+  .donation-container-a {
+    display: none;
+  }
+
+  .donation-container-b {
+    display: none;
+  }
+
+  .donation-text-b {
+    display: none;
+  }
+
+  .donation-text-c {
+    font-family: 'Lora', serif;
+    position: absolute;
+    text-align: right;
+    top: 190px;
+    right: 15%;
+    color: white;
+    font-size: 20px;
+  }
+
+  #mkray-logo {
+    display: none;
+  }
+
+  .coulds-parallax {
+    background-image: none;
+  }
+
+  .cursive {
+    font-family: 'Parisienne', cursive;
+    font-size: 3rem;
+    font-weight: normal;
+    color: black;
+    text-shadow: none;
+  }
+
+  #golf-outing {
+    display: none;
+    justify-content: center;
+    padding-bottom: 2rem;
+    width: 100vw;
+    border-top: solid black thin;
+  }
+
+}
+
 
 
 /* ========================================================================================================= */

@@ -20,7 +20,7 @@ export default class Donations extends Component {
                 <div className="scholarship-text-large">
                   Your donations have and continue to assist a young student
                   make their way to college. On behalf of our foundation and the students
-                  that have been granted a scholarship, We would like to thank you
+                  that have been granted a scholarship, we would like to thank you
                   for any contribution you make to the Solly's Way Foundation.
                   <br/>
                   <br/>

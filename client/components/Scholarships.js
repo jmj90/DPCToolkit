@@ -61,16 +61,19 @@ export default class Scholarships extends Component {
                     <br/>
                     <br/>
                 </div>
-              <div className="split-content-thin">
-                <div className="split-content-left">
-                  <div className="apply-button" name="online" >
+                  <div
+                    className="apply-button"
+                    name="online"
+                    target="_blank"
+                    onClick={() => window.location.href = `https://goo.gl/forms/6Ux0uvfUSvRZcgui2`}>
                     Apply Online
                   </div>
                   <div className="page-text-fine">
                     Use our online form to submit an application
-                  </div>
-                </div>
-                <div className="split-content-right">
+                    <br/><br/>
+                    <b>Note:</b><i> a gmail account is required. If you do not have one, please
+                    sign up free and you will be able to access this application.</i>
+              {/* <div className="split-content-right">
                   <div className="apply-button" name="mail" >
                     Apply By Mail
                   </div>
@@ -78,6 +81,7 @@ export default class Scholarships extends Component {
                     Download a PDF version of our application and submit by mail
                   </div>
                 </div>
+                */}
               </div>
               <br/>
               <div className="page-text-small">
