@@ -916,8 +916,9 @@ cursor: pointer;
   #hamburger-menu {
     position: fixed;
     top: 10px;
+    border-radius: 10px;
     right: -10px;
-    margin-right: 1rem;
+    margin-right: 0rem;
     z-index: 7;
     transition: all .3s ease;
   }
@@ -943,6 +944,8 @@ cursor: pointer;
 
   .hamburger.is-active {
     background-color: #fff;
+    border: solid black thin;
+    box-shadow: 2px 2px 10px grey;
   }
 
   #menu {
@@ -952,13 +955,13 @@ cursor: pointer;
     align-items: flex-start;
     right: 0px;
     top: 0px;
-    background-color: rgba(35, 35, 35, .9);
+    background-color: white;
     height: auto;
     width: 0px;
     z-index: 6;
     overflow: hidden;
     visibility: hidden;
-    transition: all 0.2s ease;
+    transition: all 0.4s ease;
     border-radius: 0px;
   }
 
@@ -968,18 +971,44 @@ cursor: pointer;
     visibility: visible;
     width: 100vw;
     right: 0px;
-    transition: all 0.5s ease;
+    transition: all 0.4s ease;
+    background-color: white;
+    box-shadow: 0px 2px 20px grey;
   }
 
   .menu-item {
+    text-align: center;
+    width: 89%;
+    border-radius: 4px;
     cursor: pointer;
     font-family: 'Questrial', sans-serif;
-    font-size: 18px;
-    color: white;
-    margin-right: 0rem;
+    font-size: 20px;
+    box-shadow: 0px 8px 10px rgb(229, 229, 229);
+    background: rgba(227,227,227,.2);
+    border: solid gray thin;
+    padding: .5rem .3rem .5rem .3rem;
+    color: black;
+    /* font-weight: bold; */
     margin-left: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: .4rem;
+    margin-top: .4rem;
+  }
+
+  .menu-item-title {
+    width: 69%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-family: 'Questrial', sans-serif;
+    font-size: 30px;
+    border-bottom: solid white thin;
+    padding-left: .1rem;
+    letter-spacing: 11px;
+    height: 49px;
+    color: black;
+    margin-left: 1rem;
     margin-top: 1rem;
+    margin-bottom: .5rem;
   }
 
   .clouds-parallax {
@@ -1196,11 +1225,20 @@ cursor: pointer;
   }
 
   .subpage-header-title {
-    margin: 5rem 0rem 1rem 0rem;
+    margin: 2rem 0rem 1rem 0rem;
     font-size: 20px;
     font-weight: bold;
     text-align: center;
   }
+
+  .sub-page-main.donate {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    background-image: linear-gradient(rgb(255, 255, 255), rgb(132, 193, 255));
+}
 
 
   .page-text-large {

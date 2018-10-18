@@ -66,7 +66,16 @@ export default class About extends Component {
                   </div>
                 </div>
               <div className="subpage-header-title"> Learn about our scholarship program </div>
-              <img id="books" onClick={() => window.location.href="/scholarships"} src="/assets/books.jpg" />
+              {
+                window.innerWidth <= 800 ?
+                <div>
+                  <img className="breakpoint-icons" onClick={() => window.location.href="/scholarships"} src="/assets/gradhat.png" />
+                  <br/><br/>
+                  <br/>
+                </div>
+                :
+                <img id="books" onClick={() => window.location.href="/scholarships"} src="/assets/books.jpg" />
+              }
           </div>
         </div>
         <Footer />
