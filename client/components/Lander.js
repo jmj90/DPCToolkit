@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import { Parallax, Background } from 'react-parallax';
-import ParallaxComponent from 'react-parallax-component';
 import { Parallax as Plax } from 'react-scroll-parallax'
 import Footer from './Footer'
 
@@ -27,7 +26,6 @@ export default class Lander extends Component {
         }
       })
     }
-
   }
 
   componentWillUnmount() {
@@ -50,8 +48,6 @@ export default class Lander extends Component {
 
 
   render() {
-
-
     return (
       <div className="main-view">
           <Parallax
@@ -97,8 +93,8 @@ export default class Lander extends Component {
                 </div>
                   <center>
                       <div className="text-center-large">
-                        Through our efforts and dedication, Solly’s Way Foundation
-                        provides college scholarship opportunities to children
+                        Through our efforts and dedication over the past 6 years, Solly’s Way Foundation
+                        has and continues to provide college scholarship opportunities to children
                         who have suffered a loss of a parent or guardian.
                       </div>
                   </center>

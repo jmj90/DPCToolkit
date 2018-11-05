@@ -23,13 +23,16 @@ h1 {
   padding-bottom: 5px;
 }
 
+h2 {
+  font-size: 20px;
+}
+
 .divider {
   height: 1px;
   width: 100%;
   background-color: black;
   margin: 2rem 0 2rem 0;
   border-radius: 15px 15px 15px 15px ;
-
 }
 
 .rem4-spacer {
@@ -54,6 +57,48 @@ h1 {
   -moz-box-shadow:    inset 0 0 3px rgba(0,0,0,.4);
   -webkit-box-shadow: inset 0 0 3px rgba(0,0,0,.4);
   box-shadow:         inset 0 0 3px rgba(0,0,0,.4);
+}
+
+
+/* GALLERY ================================================================= */
+
+.react-photo-gallery--gallery {
+  /* width: 1200px; */
+}
+
+.photo-title {
+  font-family: 'Lora', serif;
+  font-size: 32px;
+  margin: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+#gallery {
+  justify-content: center;
+  width: 100vw;
+}
+
+.ReactGridGallery {
+  background: rgba(0,0,0,.2);
+  display: flex !important;
+  justify-content: center !important;
+  flex-wrap: wrap;
+  min-height: 1px;
+  width: 1100px;
+  overflow: auto;
+}
+
+
+
+/* EMAIL ==================================================================== */
+
+.email-message-comment {
+  max-width: 200px;
+}
+
+.email-info-slots {
+  display: inline;
 }
 
 
@@ -245,6 +290,7 @@ h1 {
   background-color: black;
   margin: 2.9px;
 }
+
 
 /* Text Styles ============================================================== */
 
@@ -500,6 +546,16 @@ h1 {
 .sub-page-main {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  align-content: center;
+  background-color: rgb(227,227,227);
+}
+
+.sub-page-full {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   align-content: center;
   background-color: rgb(227,227,227);
@@ -761,8 +817,7 @@ h1 {
 }
 
 #logo-about {
-    max-width: 500px;
-
+  max-width: 500px;
 }
 
 #placer1 {
@@ -810,6 +865,16 @@ h1 {
 
 #header-logo:hover {
 cursor: pointer;
+}
+
+#confirmation-logo {
+  display: flex;
+  justify-content: center;
+  max-height: 100px;
+}
+
+#email-tag-logo {
+  max-height: 40px;
 }
 
 #footer-logo {
@@ -865,6 +930,46 @@ cursor: pointer;
   max-width: 100px;
 }
 
+#error-image {
+  max-width: 300px;
+}
+
+
+/* NAV BREAK ================================================================ */
+/* ========================================================================== */
+@media only screen and (max-width: 1229px) {
+
+  .header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: contain;
+    height: 150px;
+    width: 100vw;
+    background-color: white;
+    box-shadow: 0 2px 3px grey;
+  }
+
+  #header-logo {
+    display: flex;
+    max-height: 71px;
+    margin-left: 2rem;
+    margin-right: 0rem;
+  }
+
+  .header-nav-item {
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 2.3px;
+    font-weight: bold;
+    color: black;
+    font-size: 16px;
+    margin-right: .5rem;
+    margin-left: .5rem;
+    margin-bottom: .8rem;
+  }
+
+}
+
 /* IPHONE =================================================================== */
 /* ========================================================================== */
 @media only screen and (max-width: 800px) {
@@ -911,6 +1016,12 @@ cursor: pointer;
     margin-left: 3rem;
     margin-top: 0;
     margin-right: 10rem;
+  }
+
+  #confirmation-logo {
+    display: flex;
+    justify-content: center;
+    max-height: 60px;
   }
 
   #hamburger-menu {
@@ -1240,7 +1351,6 @@ cursor: pointer;
     background-image: linear-gradient(rgb(255, 255, 255), rgb(132, 193, 255));
 }
 
-
   .page-text-large {
     font-family: 'Lora', serif;
     font-size: 25px;
@@ -1316,6 +1426,16 @@ cursor: pointer;
     border-style: solid;
     color: white;
   }
+
+
+
+  #gallery {
+    padding-top: 4rem;
+    justify-content: center;
+    width: 100vw;
+  }
+
+
 
 
 /* FOOTER ==================================================================  */

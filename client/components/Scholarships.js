@@ -98,11 +98,24 @@ export default class Scholarships extends Component {
                 <b> Congratulations to the following recipients:</b>
               </div>
               <div id="recipients-container">
+
+                <div className="recipients-year-title"> 2018: </div>
+                <ul className="recipient-list">
+                  <li> <b> Julia Shein,</b> Barrington High School </li>
+                  <li> <b> Kaylin Hu,</b> Barrington High School </li>
+                  <li> <b> Angela Choksi,</b> Barrington High School </li>
+                  <li> <b> Matthijs Enters,</b> Lake Zurich High School </li>
+                  <li> <b> Averi Mireault,</b> Barrington High School </li>
+                  <li> <b> Tyler Hansen,</b> Barrington High School </li>
+                  <li> <b> Gabi Bendfeldt,</b> Lake Zurich High School </li>
+                </ul>
+
                 <div className="recipients-year-title"> 2017: </div>
                 <ul className="recipient-list">
                   <li> <b> Jennifer Garcia,</b> Barrington High School </li>
                   <li> <b> Ann Stachnik,</b> Barrington High School </li>
                 </ul>
+
                 <div className="recipients-year-title"> 2016: </div>
                 <ul className="recipient-list">
                   <li> <b> Sydney Stewart,</b> Barrington High School </li>
@@ -110,6 +123,7 @@ export default class Scholarships extends Component {
                   <li> <b> Sean Morris,</b> Barrington High School </li>
                   <li> <b> Romina Rago,</b> Barrington High School </li>
                 </ul>
+
                 <div className="recipients-year-title"> 2015: </div>
                 <ul className="recipient-list">
                   <li> <b> Cassie Kuehn,</b> Barrington High School </li>
@@ -118,6 +132,7 @@ export default class Scholarships extends Component {
                   <li> <b> Dominic Mues,</b> Wauconda High School </li>
                   <li> <b> Kylee Groh,</b> Wauconda High School </li>
                 </ul>
+
                 <div className="recipients-year-title"> 2014: </div>
                 <ul className="recipient-list">
                   <li> <b> Luiz Garcia,</b> Barrington High School  </li>
@@ -126,11 +141,13 @@ export default class Scholarships extends Component {
                   <li> <b> Amelia Ashley,</b> Wauconda High School </li>
                   <li> <b> Parmvier Kuhlon,</b> Wauconda High School </li>
                 </ul>
+
                 <div className="recipients-year-title"> 2013: </div>
                 <ul className="recipient-list">
                   <li> <b> Sara Bonefas,</b> Lake Zurich High School </li>
                   <li> <b> Tommy Kowalski,</b> Lake Zurich High School </li>
                 </ul>
+
             </div>
             </div>
           </div>
