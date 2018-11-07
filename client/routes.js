@@ -27,7 +27,7 @@ class Routes extends Component {
     return (
       <Switch>
         {/* Routes placed here are available to all visitors */}
-        {/*
+
         <Route exact path="/home" component={Lander} />
         <Route exact path="/contact" component={Contact} />
         <Route exact path="/events" component={Events} />
@@ -37,10 +37,12 @@ class Routes extends Component {
         <Route exact path="/photos" component={Photos} />
         <Route exact path="/confirmation" component={Confirmation} />
         <Route exact path="/error_500" component={Error} />
-        */}
+
         {/* Displays our Login component as a fallback */}
-        <Route component={Construction} />
-        {/* <Route component={Lander} /> */}
+        {/*<Route component={Construction} /> */}
+
+        <Route component={Lander} />
+        
       </Switch>
     )
   }

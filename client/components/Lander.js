@@ -171,6 +171,7 @@ export default class Lander extends Component {
                         click here to donate
                       </div>
                     </Plax>
+                    {/*
                     <Plax
                       className="donation-arrow"
                       offsetXMax={1150}
@@ -179,6 +180,7 @@ export default class Lander extends Component {
                     >
                     →
                   </Plax>
+                  */}
               </Parallax>
             </div>
             <div className="breakpoint-container">
