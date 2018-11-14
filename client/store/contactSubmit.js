@@ -63,7 +63,6 @@ export const addContact = contact => dispatch => {
     console.log('data', data)
   })
   .then(()=> {
-      console.log('inside of there')
       var newPostKey = firebase.database().ref().child(`scholarship-submissions/${contact.name}/submissions`).push().key;
       var updates = {};
       updates[`/scholarship-submissions/${contact.name}/submissions/` + newPostKey] = form;
