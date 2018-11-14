@@ -2,7 +2,6 @@ const router = require('express').Router()
 const path = require('path')
 module.exports = router
 
-
 // EMAIL CONFIGURATION =========================================================
 
 let nodemailer = require('nodemailer');
@@ -10,8 +9,8 @@ const transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
          user: 'sollyswayfoundation@gmail.com',
-         pass: process.env.EMAIL_PS
-     }
+         pass: 'SollyD12!'
+      }
  });
 
 const contactSubmissionToUser = {
@@ -92,6 +91,5 @@ router.post('/', (req, res, next) => {
           else console.log(info)
         })
         res.sendStatus(200)
-        .catch(next)
     }
 )
