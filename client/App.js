@@ -24,6 +24,7 @@ const App = () => {
         <div id="mobile-menu">
           <div id="menu">
             <div className="menu-item-title noselect" onClick={navClick}>Menu</div>
+            <div className="menu-item noselect" onClick={navClick} value="home">Home</div>
             <div className="menu-item noselect" onClick={navClick} value="about">About</div>
             <div className="menu-item noselect" onClick={navClick} value="scholarships">Scholarships</div>
             <div className="menu-item noselect" onClick={navClick} value="events">Events</div>

@@ -1,5 +1,4 @@
 const router = require('express').Router()
-const { Contact } = require('../db/models')
 const path = require('path')
 module.exports = router
 
@@ -11,7 +10,7 @@ const transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
          user: 'sollyswayfoundation@gmail.com',
-         pass: '102901jj'
+         pass: 'SollyD12!'
      }
  });
 
@@ -44,25 +43,17 @@ const contactSubmissionToAdmin = {
 // API ROUTES ==================================================================
 
 router.post('/', (req, res, next) => {
-  let user;
-  Contact.findOrCreate({
-    where: req.body
-  })
-    .then(contact => {
-      res.json(contact).status(200)
-      user = contact
-    })
-    .then(() => {
+  let user = req.body
       // to user
-      contactSubmissionToUser.to = user[0].email
+      contactSubmissionToUser.to = user.email
       contactSubmissionToUser.html = `
-      <h3> Hello ${user[0].name}, </h3>
+      <h3> Hello ${user.name}, </h3>
         <p>
           Thank you for contacting Solly's Way Foundation. We have recieved
           your message.
         </p>
         <h3> Your Message: </h3>
-        <div className="email-message-comment"> ${user[0].comment} </div>
+        <div className="email-message-comment"> ${user.comment} </div>
         <br />
         <br />
         <p>
@@ -78,30 +69,29 @@ router.post('/', (req, res, next) => {
         if (err) console.log(err)
         else console.log(info)
       })
-    })
-    .then(() => {
-      // to admin
-      contactSubmissionToAdmin.replyTo = user[0].email
-      contactSubmissionToAdmin.html = `
-      <h2> You've recieved a new contact submission from SollysWay.org </h2>
-      <br />
-        <b> From:  </b> ${user[0].name}
+
+        // to admin
+        contactSubmissionToAdmin.replyTo = user.email
+        contactSubmissionToAdmin.html = `
+        <h2> You've recieved a new contact submission from SollysWay.org </h2>
         <br />
-        <b> Email: </b> ${user[0].email}
+          <b> From:  </b> ${user.name}
+          <br />
+          <b> Email: </b> ${user.email}
+          <br />
+          <br />
+          <h4> Message: </h4>
+            <div className="email-message-comment"> ${user.comment} </div>
         <br />
         <br />
-        <h4> Message: </h4>
-          <div className="email-message-comment"> ${user[0].comment} </div>
-      <br />
-      <br />
-      <p> Follow the link below to reply </p>
-      <img className="email-tag-logo" src="cid:sollyslogo"/>
-      `
-      transporter.sendMail(contactSubmissionToAdmin, (err, info) => {
-        if (err) console.log(err)
-        else console.log(info)
-      })
-    })
-    .catch(next)
-  }
+        <p> Follow the link below to reply </p>
+        <img className="email-tag-logo" src="cid:sollyslogo"/>
+        `
+        transporter.sendMail(contactSubmissionToAdmin, (err, info) => {
+          if (err) console.log(err)
+          else console.log(info)
+        })
+        res.sendStatus(200)
+        .catch(next)
+    }
 )

@@ -17,5 +17,3 @@ ReactDOM.render(
   </Provider>,
   document.getElementById('app')
 )
-
-// 4/7/18 push

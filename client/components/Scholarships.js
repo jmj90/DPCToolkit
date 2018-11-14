@@ -97,8 +97,8 @@ export default class Scholarships extends Component {
               <div className="subpage-header-title-special">
                 <b> Congratulations to the following recipients:</b>
               </div>
+              <div id="scholarship-list">
               <div id="recipients-container">
-
                 <div className="recipients-year-title"> 2018: </div>
                 <ul className="recipient-list">
                   <li> <b> Julia Shein,</b> Barrington High School </li>
@@ -148,7 +148,8 @@ export default class Scholarships extends Component {
                   <li> <b> Tommy Kowalski,</b> Lake Zurich High School </li>
                 </ul>
 
-            </div>
+              </div>
+              </div>
             </div>
           </div>
         <Footer />

@@ -47,8 +47,6 @@ class Contact extends Component {
 
   render() {
 
-    console.log(this.props)
-
     return (
       <div className="sub-page-main">
         <Header />
@@ -128,7 +126,6 @@ class Contact extends Component {
         comment: evt.comment.value
       }
     )
-    console.log(newContactSumbission)
     this.props.addContact(newContactSumbission);
   }
 

@@ -27,6 +27,10 @@ h2 {
   font-size: 20px;
 }
 
+li {
+  font-size: 15px;
+}
+
 .divider {
   height: 1px;
   width: 100%;
@@ -431,7 +435,7 @@ h2 {
 .header-container {
   display: flex;
   align-items: center;
-  /* justify-content: space-between; */
+  justify-content: center;
   background-size: contain;
   height: 150px;
   width: 100vw;
@@ -698,17 +702,21 @@ h2 {
   height: 400px;
 }
 
+#scholarship-list {
+  width: 1000px
+}
+
+
 .recipients-year-title  {
-  font-size: 20px;
   padding: .2rem;
   font-weight: bold;
-  width: 90%;
+  width: 322px;
   background-color: white;
   color: rgb(216, 0, 0);
 }
 
 .recipient-list {
-  margin-right: 4rem;
+  /* margin-right: 4rem; */
 }
 
 /* Scholarships Page ========================================================= */
@@ -937,7 +945,7 @@ cursor: pointer;
 
 /* NAV BREAK ================================================================ */
 /* ========================================================================== */
-@media only screen and (max-width: 1229px) {
+@media only screen and (max-width: 1310px) {
 
   .header-container {
     display: flex;
@@ -953,7 +961,7 @@ cursor: pointer;
   #header-logo {
     display: flex;
     max-height: 71px;
-    margin-left: 2rem;
+    margin-left: 0rem;
     margin-right: 0rem;
   }
 
@@ -968,11 +976,21 @@ cursor: pointer;
     margin-bottom: .8rem;
   }
 
+  .subpage-header-title-special {
+    margin: 3rem 0rem 1rem 0rem;
+    width: 80%;
+    padding: 1.6rem;
+    background-color: #1E2226;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
 }
 
 /* IPHONE =================================================================== */
 /* ========================================================================== */
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 885px) {
 
 /* LANDER HEADER ===========================================================  */
 
@@ -1013,9 +1031,9 @@ cursor: pointer;
     display: flex;
     justify-content: center;
     max-height: 60px;
-    margin-left: 3rem;
+    /* margin-left: 0rem; */
     margin-top: 0;
-    margin-right: 10rem;
+    /* margin-right: 10rem; */
   }
 
   #confirmation-logo {
@@ -1067,7 +1085,7 @@ cursor: pointer;
     right: 0px;
     top: 0px;
     background-color: white;
-    height: auto;
+    height: 100vh;
     width: 0px;
     z-index: 6;
     overflow: hidden;
@@ -1078,25 +1096,25 @@ cursor: pointer;
 
   #menu.isactive {
     position: fixed;
-    justify-content: center;
+    /* justify-content: center; */
     visibility: visible;
-    width: 100vw;
+    width: 200px;
+    height: 100vh;
     right: 0px;
     transition: all 0.4s ease;
     background-color: white;
-    box-shadow: 0px 2px 20px grey;
+    box-shadow: 0px 2px 20px black;
   }
 
   .menu-item {
-    text-align: center;
-    width: 89%;
+    width: 77%;
     border-radius: 4px;
     cursor: pointer;
     font-family: 'Questrial', sans-serif;
     font-size: 20px;
     box-shadow: 0px 8px 10px rgb(229, 229, 229);
     background: rgba(227,227,227,.2);
-    border: solid gray thin;
+    /* border: solid gray thin; */
     padding: .5rem .3rem .5rem .3rem;
     color: black;
     /* font-weight: bold; */
@@ -1114,7 +1132,7 @@ cursor: pointer;
     font-size: 30px;
     border-bottom: solid white thin;
     padding-left: .1rem;
-    letter-spacing: 11px;
+    letter-spacing: 2px;
     height: 49px;
     color: black;
     margin-left: 1rem;
@@ -1353,8 +1371,12 @@ cursor: pointer;
 
   .page-text-large {
     font-family: 'Lora', serif;
-    font-size: 25px;
+    font-size: 20px;
     margin: 1rem;
+}
+
+.page-text-small {
+  margin: 1rem 1rem 0rem 1rem;
 }
 
   .photo-title {
@@ -1378,7 +1400,7 @@ cursor: pointer;
   .scholarship-text-large {
     font-family: 'Lora', serif;
     line-height: 30px;
-    font-size: 24px;
+    font-size: 20px;
     color: white;
     margin: 1rem;
     text-align: center;

@@ -16,7 +16,6 @@ navClick(evt, data) {
       <div className="header-container">
         <img id="header-logo" src="/assets/sollyslogo3.png" onClick={()=> history.push('/home')}/>
           <div id="header-nav">
-            <div className="header-nav-item noselect" onClick={this.navClick} value="home">Home</div>
             <div className="header-nav-item noselect" onClick={this.navClick} value="about">About</div>
             <div className="header-nav-item noselect" onClick={this.navClick} value="scholarships">Scholarships</div>
             <div className="header-nav-item noselect" onClick={this.navClick} value="events">Events</div>
