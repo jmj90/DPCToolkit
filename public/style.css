@@ -1418,6 +1418,10 @@ cursor: pointer;
     font-weight: bold;
   }
 
+  #scholarship-list {
+    width: 95vw;
+  }
+
   .page-text {
     font-family: 'Lora', serif;
     line-height: 30px;
