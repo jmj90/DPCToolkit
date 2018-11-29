@@ -38,6 +38,7 @@ class Routes extends Component {
         <Route exact path="/photos" component={Photos} />
         <Route exact path="/confirmation" component={Confirmation} />
         <Route exact path="/error_500" component={Error} />
+        <Route exact path="/error_404" component={Four04} />
 
         {/* Displays our Login component as a fallback */}
         {/*<Route component={Construction} /> */}
