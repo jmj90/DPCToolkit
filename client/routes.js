@@ -29,7 +29,7 @@ class Routes extends Component {
       <Switch>
         {/* Routes placed here are available to all visitors */}
 
-        <Route exact path="/home" component={Lander} />
+        <Route exact path="/" component={Lander} />
         <Route exact path="/contact" component={Contact} />
         <Route exact path="/events" component={Events} />
         <Route exact path="/about" component={About} />

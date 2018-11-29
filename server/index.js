@@ -37,7 +37,7 @@ const createApp = () => {
   app.use('/api', require('./api'))
 
   if (process.env.NODE_ENV === 'production'){
-  //redirect to HTTPS
+    //redirect to HTTPS
     app.use(enforce.HTTPS({ trustProtoHeader: true }))
   }
 
@@ -45,11 +45,9 @@ const createApp = () => {
   app.use(express.static(path.join(__dirname, '..', 'public')))
 
   // any remaining requests with an extension (.js, .css, etc.) send 404
-
-  // const err = new Error(errorPage)
-  //
   // app.use((req, res, next) => {
   //   if (path.extname(req.path).length) {
+  //    const err = new Error('Not Found')
   //     err.status = 404
   //     console.error(err)
   //     next(err)
