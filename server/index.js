@@ -39,16 +39,18 @@ const createApp = () => {
   app.use(express.static(path.join(__dirname, '..', 'public')))
 
   // any remaining requests with an extension (.js, .css, etc.) send 404
-  app.use((req, res, next) => {
-    if (path.extname(req.path).length) {
-      const err = new Error('Not found')
-      err.status = 404
-      console.error(err)
-      next(err)
-    } else {
-      next()
-    }
-  })
+
+  // const err = new Error(errorPage)
+  //
+  // app.use((req, res, next) => {
+  //   if (path.extname(req.path).length) {
+  //     err.status = 404
+  //     console.error(err)
+  //     next(err)
+  //   } else {
+  //     next()
+  //   }
+  // })
 
   // sends index.html
   app.use('*', (req, res) => {
@@ -59,7 +61,7 @@ const createApp = () => {
   app.use((err, req, res, next) => {
     console.error(err)
     console.error(err.stack)
-    res.status(err.status || 500).send(err.message || 'Internal server error.')
+    res.status(err.status || 500).send(err.message || 'Something went very wrong 8( ... Internal server error.')
   })
 }
 

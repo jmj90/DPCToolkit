@@ -12,7 +12,8 @@ import {
   Photos,
   Confirmation,
   Construction,
-  Error
+  Error,
+  Four04
 } from './components'
 import fetchContacts from './store'
 
@@ -41,8 +42,8 @@ class Routes extends Component {
         {/* Displays our Login component as a fallback */}
         {/*<Route component={Construction} /> */}
 
-        <Route component={Lander} />
-        
+        <Route component={Four04} />
+
       </Switch>
     )
   }
