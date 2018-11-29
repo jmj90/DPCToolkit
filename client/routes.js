@@ -41,9 +41,7 @@ class Routes extends Component {
 
         {/* Displays our Login component as a fallback */}
         {/*<Route component={Construction} /> */}
-
-        <Route component={Four04} />
-
+        <Route component={Lander} />
       </Switch>
     )
   }
