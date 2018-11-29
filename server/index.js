@@ -5,6 +5,7 @@ const bodyParser = require('body-parser')
 const compression = require('compression')
 const PORT = process.env.PORT || 8080
 const socketio = require('socket.io')
+const enforce = require('express-sslify');
 const app = express()
 
 module.exports = app
@@ -34,6 +35,11 @@ const createApp = () => {
 
   // auth and api routes
   app.use('/api', require('./api'))
+
+  if (process.env.NODE_ENV === 'production'){
+  //redirect to HTTPS
+    app.use(enforce.HTTPS({ trustProtoHeader: true }))
+  }
 
   // static file-serving middleware
   app.use(express.static(path.join(__dirname, '..', 'public')))
