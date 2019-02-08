@@ -1066,7 +1066,6 @@ cursor: pointer;
     border-bottom: solid black thin;
     height: 80px;
     background-color: white;
-    position: fixed;
     width: 100vw;
   }
 

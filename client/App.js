@@ -19,7 +19,7 @@ function hamburgerClick(e) {
 const App = () => {
   return (
     <div>
-      {
+      {/*
         window.innerWidth <= 800 ?
         <div id="mobile-menu">
           <div id="menu">
@@ -42,7 +42,7 @@ const App = () => {
           </div>
       </div>
       : <div/>
-      }
+      */}
       <Routes />
     </div>
   )
