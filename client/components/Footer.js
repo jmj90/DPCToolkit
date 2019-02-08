@@ -14,34 +14,22 @@ export default class Footer extends Component {
     return (
       <div className="footer-outer">
       <div className="footer-container">
-        <img id="footer-logo" src="/assets/sollyslogo2.png"/>
-        <div className="footer-divider" />
-          <div id="footer-nav">
-            <div className="footer-nav-item noselect" onClick={this.navClick} value="home">Home</div>
-            <div className="footer-nav-item noselect" onClick={this.navClick} value="about">About</div>
-            <div className="footer-nav-item noselect" onClick={this.navClick} value="scholarships">Scholarships</div>
-            <div className="footer-nav-item noselect" onClick={this.navClick} value="events">Events</div>
-            <div className="footer-nav-item noselect" onClick={this.navClick} value="donations">Donations</div>
-            <div className="footer-nav-item noselect" onClick={this.navClick} value="photos">Photos</div>
-            <div className="footer-nav-item noselect" onClick={this.navClick} value="contact">Contact</div>
-          </div>
-          <div className="footer-divider" />
+        <img id="footer-logo" src="/assets/logos/poocomv2.png"/>
           <div id="footer-connect-nav">
-            <div className="footer-nav-text"> connect with us : </div>
+            <div className="footer-nav-text"> internet things : </div>
             <img
-              id="facebook-logo"
-              src="/assets/facebook.png"
+              id="twitch-logo"
+              src="/assets/icons/twitch.png"
               onClick={() => window.location.href="https://www.facebook.com/pages/Sollys-Way-Foundation/593681160660088"}/>
             <img
-              id="instagram-logo"
-              src="/assets/instagram.png"
+              id="twitter-logo"
+              src="/assets/icons/twitter.png"
               onClick={() => window.location.href="https://www.instagram.com/sollysway/"}/>
-            <img id="email-logo" src="/assets/email.png" />
+            <img id="mixer-logo" src="/assets/icons/mixer.png" />
           </div>
       </div>
       <div className="copy">
-        © Solly's Way Foundation, Inc. is a non for profit organization. For
-        more information call 847-804-0210
+      Just a guy making poo jokes and overlays © 2019 Pooey Butts Media. All Rights Reserved.
       </div>
     </div>
     )

@@ -6,7 +6,7 @@ import {
   Lander,
   Contact,
   Events,
-  About,
+  Home,
   Scholarships,
   Donations,
   Photos,
@@ -29,10 +29,10 @@ class Routes extends Component {
       <Switch>
         {/* Routes placed here are available to all visitors */}
 
-        <Route exact path="/" component={Lander} />
+        <Route exact path="/" component={Home} />
         <Route exact path="/contact" component={Contact} />
         <Route exact path="/events" component={Events} />
-        <Route exact path="/about" component={About} />
+        <Route exact path="/home" component={Home} />
         <Route exact path="/scholarships" component={Scholarships} />
         <Route exact path="/donations" component={Donations} />
         <Route exact path="/photos" component={Photos} />
@@ -42,7 +42,7 @@ class Routes extends Component {
 
         {/* Displays our Login component as a fallback */}
         {/*<Route component={Construction} /> */}
-        <Route component={Lander} />
+        <Route component={Home} />
       </Switch>
     )
   }
