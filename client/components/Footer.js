@@ -20,12 +20,9 @@ export default class Footer extends Component {
             <img
               id="twitch-logo"
               src="/assets/icons/twitch.png"
-              onClick={() => window.location.href="https://www.facebook.com/pages/Sollys-Way-Foundation/593681160660088"}/>
-            <img
-              id="twitter-logo"
-              src="/assets/icons/twitter.png"
-              onClick={() => window.location.href="https://www.instagram.com/sollysway/"}/>
-            <img id="mixer-logo" src="/assets/icons/mixer.png" />
+              onClick={() => window.location.href="https://www.twitch.tv/pooey_butts"}/>
+            <img id="mixer-logo" src="/assets/icons/mixer.png"
+              onClick={() => window.location.href="https://mixer.com/pooey_butts"}/>
           </div>
       </div>
       <div className="copy">

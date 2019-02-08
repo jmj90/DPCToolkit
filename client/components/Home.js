@@ -26,7 +26,13 @@ export default class Home extends Component {
            </Parallax>
         <div className="sub-page-content-outer">
           <div className="sub-page-content">
-            {/* <div className="sub-page-title">About Solly's Way Foundation</div> */}
+            <div className="title-text-large">
+              <div className="rem4-spacer" />
+            OH BOY, FULL SITE COMING REAL SOON
+          </div>
+          <br />
+          For now if you want something shoot me an email: <div className="text-quote">customs@pooeybutts.com</div>
+            {/* <div className="sub-page-title">About Solly's Way Foundation</div>
             <div className="rem-spacer" />
             <div className="title-text-large">
               peep what peeps are saying.
@@ -42,7 +48,7 @@ export default class Home extends Component {
               <div className="sub-page-content">
                   <ProductGrid />
               </div>
-              <div className="rem4-spacer" />
+              */}
           </div>
         </div>
         <Footer />
