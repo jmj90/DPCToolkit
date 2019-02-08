@@ -47,9 +47,9 @@ const createApp = () => {
   app.use('/api', require('./api'))
 
   //redirect to HTTPS
-  if (process.env.NODE_ENV === 'production'){
-    app.use(enforce.HTTPS({ trustProtoHeader: true }))
-  }
+  // if (process.env.NODE_ENV === 'production'){
+  //   app.use(enforce.HTTPS({ trustProtoHeader: true }))
+  // }
 
   // static file-serving middleware
   app.use(express.static(path.join(__dirname, '..', 'public')))
