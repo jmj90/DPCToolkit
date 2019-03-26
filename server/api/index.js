@@ -2,6 +2,7 @@ const router = require('express').Router()
 module.exports = router
 
 router.use('/contacts', require('./contact'))
+router.use('/shopify', require('./shopify'))
 
 router.use((req, res, next) => {
   const error = new Error('Not Found')

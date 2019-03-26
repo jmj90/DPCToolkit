@@ -3,17 +3,8 @@ import {connect} from 'react-redux'
 import {withRouter, Route, Switch} from 'react-router-dom'
 import PropTypes from 'prop-types'
 import {
-  Lander,
   Contact,
-  Events,
   Home,
-  Scholarships,
-  Donations,
-  Photos,
-  Confirmation,
-  Construction,
-  Error,
-  Four04
 } from './components'
 import fetchContacts from './store'
 
@@ -31,15 +22,7 @@ class Routes extends Component {
 
         <Route exact path="/" component={Home} />
         <Route exact path="/contact" component={Contact} />
-        <Route exact path="/events" component={Events} />
         <Route exact path="/home" component={Home} />
-        <Route exact path="/scholarships" component={Scholarships} />
-        <Route exact path="/donations" component={Donations} />
-        <Route exact path="/photos" component={Photos} />
-        <Route exact path="/confirmation" component={Confirmation} />
-        <Route exact path="/error_500" component={Error} />
-        <Route exact path="/error_404" component={Four04} />
-
         {/* Displays our Login component as a fallback */}
         {/*<Route component={Construction} /> */}
         <Route component={Home} />

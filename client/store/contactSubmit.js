@@ -57,15 +57,15 @@ export const addContact = contact => dispatch => {
     comment: contact.comment
     }
 
-  firebase.database().ref(`scholarship-submissions/${contact.name}/submissions`).once('value')
+  firebase.database().ref(`email-signup/${contact.name}`).once('value')
   .then(function(snapshot) {
     data = snapshot.val()
     console.log('data', data)
   })
   .then(()=> {
-      var newPostKey = firebase.database().ref().child(`scholarship-submissions/${contact.name}/submissions`).push().key;
+      var newPostKey = firebase.database().ref().child(`email-signup/${contact.name}/`).push().key;
       var updates = {};
-      updates[`/scholarship-submissions/${contact.name}/submissions/` + newPostKey] = form;
+      updates[`/email-signup/${contact.name}/` + newPostKey] = form;
       firebase.database().ref().update(updates);
   })
   .then(() => {

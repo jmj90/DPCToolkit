@@ -8,15 +8,15 @@ let nodemailer = require('nodemailer');
 const transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
-         user: 'sollyswayfoundation@gmail.com',
-         pass: 'SollyD12!'
+         user: 'customs@pooeybutts.com',
+         pass: process.env.EMAIL_PASSWORD
       }
  });
 
 const contactSubmissionToUser = {
-  from: 'no-reply@sollysway.org', // sender address
+  from: 'no-reply@pooeybutts.com', // sender address
   to: 'to@gmail.com', // list of receivers
-  subject: `Solly's Way Foundation: We've Recieved Your Submission.`, // Subject line
+  subject: `Welcome to Pooeybutts.com`, // Subject line
   html: 'message',
   attachments: [{
         filename: 'swf_email_logo.png',
@@ -27,9 +27,9 @@ const contactSubmissionToUser = {
 
 const contactSubmissionToAdmin = {
   from: 'no-reply@sollysway.org', // sender address
-  to: 'sollyswayfoundation@gmail.com', // list of receivers
+  to: 'customs@pooeybutts.com', // list of receivers
   replyTo: 'user',
-  subject: `Solly's Way Foundation: New Contact Form Submission`, // Subject line
+  subject: `Someone joined the pooey team`, // Subject line
   html: 'message',
   attachments: [{
         filename: 'sollyslogo3.png',

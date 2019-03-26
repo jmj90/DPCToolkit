@@ -3,7 +3,7 @@ const express = require('express')
 const morgan = require('morgan')
 const bodyParser = require('body-parser')
 const compression = require('compression')
-const PORT = process.env.PORT || 8080
+const PORT = process.env.PORT || 3000
 const socketio = require('socket.io')
 const enforce = require('express-sslify');
 const app = express()
@@ -47,9 +47,9 @@ const createApp = () => {
   app.use('/api', require('./api'))
 
   //redirect to HTTPS
-  // if (process.env.NODE_ENV === 'production'){
-  //   app.use(enforce.HTTPS({ trustProtoHeader: true }))
-  // }
+  if (process.env.NODE_ENV === 'production'){
+    app.use(enforce.HTTPS({ trustProtoHeader: true }))
+  }
 
   // static file-serving middleware
   app.use(express.static(path.join(__dirname, '..', 'public')))
