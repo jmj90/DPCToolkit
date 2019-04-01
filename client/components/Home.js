@@ -41,11 +41,11 @@ export default class Home extends Component {
           <div className="sub-page-content">
             <div className="title-text-large">
               <div className="rem-spacer" />
-            OH BOY, FULL SITE COMING REAL SOON
+            MORE SOON
           </div>
           <br />
           <div className="email-me">
-            For now if you want something shoot me an email: <div className="text-quote"> customs@pooeybutts.com</div>
+            For now if you want something shoot me an email: <div className="text-quote"> info@glasspyramids.com</div>
           </div>
           <div className="rem4-spacer" />
           {/*
