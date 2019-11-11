@@ -27,7 +27,12 @@ navClick(evt, data) {
           <a href="#" data-hover="contact"><span>contact</span></a>
           </nav>
           */}
-            <button className="button button--rayen button--border-thin button--text-thick button--text-upper button--size-s" data-text="contact"><span>contact</span></button>
+            <button
+              className="button button--rayen button--border-thin button--text-thick button--text-upper button--size-s"
+              data-text="contact"
+              onClick={() => window.location.href = "mailto:info@glasspyramids.com?subject=GLASSPYRAMIDS.COM:%20CONTACT"}>
+              <span>contact</span>
+            </button>
       </div>
     )
   }
