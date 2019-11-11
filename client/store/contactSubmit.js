@@ -1,6 +1,6 @@
 import axios from 'axios';
 import history from '../history'
-import firebase from '../../server/firebase'
+
 
 // CONTACT ACTION TYPES
 const INIT_CONTACTS = 'INIT_CONTACTS';
@@ -46,39 +46,6 @@ export const fetchContact = () => dispatch => {
 
 export const addContact = contact => dispatch => {
 
-  let data;
-  let form = {
-    name: contact.name,
-    email: contact.email,
-    phone: contact.phone,
-    city: contact.city,
-    state: contact.state,
-    company: contact.company,
-    comment: contact.comment
-    }
-
-  firebase.database().ref(`email-signup/${contact.name}`).once('value')
-  .then(function(snapshot) {
-    data = snapshot.val()
-    console.log('data', data)
-  })
-  .then(()=> {
-      var newPostKey = firebase.database().ref().child(`email-signup/${contact.name}/`).push().key;
-      var updates = {};
-      updates[`/email-signup/${contact.name}/` + newPostKey] = form;
-      firebase.database().ref().update(updates);
-  })
-  .then(() => {
-    axios.post('/api/contacts', contact)
-      .then(res => {
-        dispatch(createContact(res.data))
-        window.location.href = `/confirmation`
-      })
-  })
-    .catch(err => {
-      console.error(`Submission Error: ${contact}`, err)
-      window.location.href = `/error_500`
-    });
 }
 
 
