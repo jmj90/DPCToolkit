@@ -683,6 +683,14 @@ cursor: pointer;
 
 /* LANDER HEADER ===========================================================  */
 
+.video-banner {
+  display: none;
+}
+
+.banner-container {
+  display: none;
+}
+
   #mobile-menu {
     /* z-index: 10; */
   }

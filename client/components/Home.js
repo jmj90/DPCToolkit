@@ -51,9 +51,12 @@ export default class Home extends Component {
             MORE SOON
           </div>
           <br />
-          <div className="email-me">
-            For now if you want something shoot me an email: <div className="text-quote"> info@glasspyramids.com</div>
-          </div>
+            <button
+              className="button button--rayen button--border-thin button--text-thick button--text-upper button--size-s"
+              data-text="contact"
+              onClick={() => window.location.href = "mailto:info@glasspyramids.com?subject=GLASSPYRAMIDS.COM:%20CONTACT"}>
+              <span>contact</span>
+            </button>
           <div className="rem4-spacer" />
           {/*
         <div className="sub-page-title">peep what peeps are saying.</div>
