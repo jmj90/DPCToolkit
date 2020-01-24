@@ -16,6 +16,9 @@ export default class Home extends Component {
           <div className="banner-container">
             <LandingVideo />
           </div>
+          <h1>HIGH QUALITY CUSTOM GRAPHICS</h1>
+          <p> Customize your brand exactly the way you want. </p>
+          <p>Logos | 3D Graphics | Intros | Overlays | Transitions | Intermissions </p>
 
            <div className="vimeo-container">
            <iframe

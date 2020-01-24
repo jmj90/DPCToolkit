@@ -16,7 +16,7 @@ export default class Footer extends Component {
       <div className="footer-container">
       </div>
       <div className="copy">
-      © 2019 GLASS PYRAMIDS MEDIA. All Rights Reserved.
+      © 2020 GLASS PYRAMIDS MEDIA. All Rights Reserved.
       </div>
     </div>
     )
