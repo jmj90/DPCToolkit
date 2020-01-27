@@ -328,7 +328,7 @@ li {
   justify-content: space-between;
   background-size: contain;
   height: 90px;
-  width: 100vw;
+  width: 84vw;
   /* margin-top: 1rem; */
 }
 
@@ -566,7 +566,7 @@ li {
 
 #header-logo {
   display: flex;
-  max-height: 40px;
+  max-height: 43px;
   margin-left: 2rem;
   margin-right: 20px;
   z-index: 4;

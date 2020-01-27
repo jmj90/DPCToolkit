@@ -22,11 +22,8 @@ navClick(evt, data) {
 
 
         <div id="header-nav">
-          <nav className="cl-effect-13" style={{fontSize:"12px"}}>
-            <a href="http://www.google.com" data-hover="Stock Goods"><span>Stock Goods</span></a>
-          </nav>
-          <nav className="cl-effect-13" style={{fontSize:"12px"}}>
-            <a href="http://www.google.com" data-hover="Custom Shop"><span>Custom Shop</span></a>
+          <nav className="cl-effect-17">
+            <a style={{fontWeight:"bold", fontSize:"14px", color:"white !important"}} href="http://store.glasspyramids.com" data-hover="Store"><span>Store</span></a>
           </nav>
             <button
               className="button button--rayen
