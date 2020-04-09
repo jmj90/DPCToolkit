@@ -21,6 +21,13 @@ export default class Home extends Component {
           <p>Logos | 3D Graphics | Intros | Overlays | Transitions | Intermissions </p>
 
            <div className="vimeo-container">
+             <iframe
+               className="vimeo-video"
+               src="https://player.vimeo.com/video/405972671?color=ff0179&byline=0&portrait=0"
+               width="400" height="230"
+               frameBorder="0"
+               webkitallowfullscreen="true"  mozallowfullscreen="true" allowFullScreen>
+             </iframe>
            <iframe
              className="vimeo-video"
              src="https://player.vimeo.com/video/372444747?color=ff0179&byline=0&portrait=0"
