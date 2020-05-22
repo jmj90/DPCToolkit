@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Header from './Header'
 import Footer from './Footer'
+import BannerFormatter from './BannerFormatter'
 
 
 export default class Home extends Component {
@@ -10,6 +11,7 @@ export default class Home extends Component {
     return (
       <div className="main">
         <Header />
+        <BannerFormatter />
         <Footer />
       </div>
     )
