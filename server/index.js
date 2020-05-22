@@ -3,20 +3,14 @@ const express = require('express')
 const morgan = require('morgan')
 const bodyParser = require('body-parser')
 const compression = require('compression')
-const PORT = process.env.PORT || 3000
+const PORT = process.env.PORT || 8080
 const socketio = require('socket.io')
 const enforce = require('express-sslify');
 const app = express()
 const dotenv = require('dotenv').config();
 const crypto = require('crypto');
 const cookie = require('cookie');
-const nonce = require('nonce')();
-const querystring = require('querystring');
-const request = require('request-promise');
-const apiKey = process.env.SHOPIFY_API_KEY;
-const apiSecret = process.env.SHOPIFY_API_SECRET;
-const scopes = 'read_products';
-const forwardingAddress = "{https://3311fc02.ngrok.io}"; // Replace this with your HTTPS Forwarding address
+
 
 module.exports = app
 
@@ -54,18 +48,6 @@ const createApp = () => {
   // static file-serving middleware
   app.use(express.static(path.join(__dirname, '..', 'public')))
 
-  // any remaining requests with an extension (.js, .css, etc.) send 404
-  // app.use((req, res, next) => {
-  //   if (path.extname(req.path).length) {
-  //    const err = new Error('Not Found')
-  //     err.status = 404
-  //     console.error(err)
-  //     next(err)
-  //   } else {
-  //     next()
-  //   }
-  // })
-
   // sends index.html
   app.use('*', (req, res) => {
     res.sendFile(path.join(__dirname, '..', 'public/index.html'))
@@ -83,10 +65,6 @@ const createApp = () => {
 const startListening = () => {
   // start listening (and create a 'server' object representing our server)
   const server = app.listen(PORT, () => console.log(`Listening on port: ${PORT}`))
-
-  // set up our socket control center
-  const io = socketio(server)
-  require('./socket')(io)
 }
 
 

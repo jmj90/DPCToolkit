@@ -13,10 +13,9 @@ export default class Footer extends Component {
   render() {
     return (
       <div className="footer-outer">
-      <div className="footer-container">
-      </div>
       <div className="copy">
-      © 2020 GLASS PYRAMIDS MEDIA. All Rights Reserved.
+      Author: Jake Johnson<br />
+      Bounteous
       </div>
     </div>
     )

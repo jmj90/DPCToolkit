@@ -1,0 +1,22 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  height:100%;
+}
+
+html {
+  overflow-y: scroll;
+  overflow-x: scroll;
+}
+
+a {
+  margin: 0px;
+  border: 0px;
+  text-decoration: none;
+}
+
+p {
+  color: white;
+  font-weight: 600;
+}
