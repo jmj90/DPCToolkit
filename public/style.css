@@ -1,8 +1,12 @@
 body {
+  display: flex;
+  flex-direction: column;
   font-family: 'Open Sans', sans-serif;
   margin: 0;
   -webkit-font-smoothing: antialiased;
   height:100%;
+  background: white;
+  align-items: center;
 }
 
 html {
@@ -16,7 +20,17 @@ a {
   text-decoration: none;
 }
 
-p {
-  color: white;
-  font-weight: 600;
+h1 {
+  
+}
+
+.footer-outer {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 12px;
+}
+
+.logo-md {
+  max-height: 100px
 }

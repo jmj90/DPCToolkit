@@ -1,23 +1,12 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-
-export default class Footer extends Component {
-
-
-  navClick(evt) {
-    let path = evt.target.innerHTML.split(' ')
-    path = path[0].toLowerCase()
-    window.location.href = `/${path}`
-  }
-
-  render() {
+const Footer = () => {
     return (
       <div className="footer-outer">
-      <div className="copy">
       Author: Jake Johnson<br />
       Bounteous
-      </div>
     </div>
     )
-  }
 }
+
+export default Footer
