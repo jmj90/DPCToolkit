@@ -27,7 +27,7 @@ formatSubjectlines(e) {
   render(){
     return (
       <>
-      <h1>Subject Line Formatter</h1>
+      <h1 style={{margin: "0px"}}>Subject Line Formatter</h1>
       <p>type <b>$PRICE$</b> where amount should go</p>
         <div className="container">
           <div id="form-2">
