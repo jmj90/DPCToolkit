@@ -17,7 +17,7 @@ formatSubjectlines(e) {
   document.getElementById('list').innerHTML = `
   ${formattedEN_DYN}
   ${formattedFR_DYN}
-  
+
   var enSubjectStatic = "${sl.en_stat}";
   var frSubjectStatic = "${sl.fr_stat}";
   `
@@ -53,7 +53,6 @@ formatSubjectlines(e) {
             <textarea className="storeContainer" readOnly id="list" />
           </div>
         </div>
-        <br/><br/>
         <button onClick={(evt) => this.formatSubjectlines(evt)}>submit</button>
       </>
     )
