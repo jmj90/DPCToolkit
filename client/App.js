@@ -1,5 +1,6 @@
 import React from 'react'
 import Routes from './routes'
+import { Header, Footer } from './components'
 
 function navClick(evt, data) {
   let path = evt.target.innerHTML.split(' ')
@@ -18,8 +19,10 @@ function hamburgerClick(e) {
 
 const App = () => {
   return (
-    <div>
+    <div className="main">
+      <Header />
       <Routes />
+      <Footer />
     </div>
   )
 }
