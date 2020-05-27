@@ -22,7 +22,7 @@ export default class BannerFormatter extends Component {
       alten: form.alten.value,
       altfr: form.altfr.value
     }
-    
+
     let formatted = `
       var ${obj.name} = {
           img: {
@@ -117,7 +117,6 @@ export default class BannerFormatter extends Component {
            </div>
 
           </div>
-          <br/><br/>
           <button onClick={(evt) => this.formatObject(evt)}>submit</button>
       </>
     )
