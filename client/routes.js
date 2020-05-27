@@ -17,8 +17,8 @@ class Routes extends Component {
       <Switch>
         {/* Routes placed here are available to all visitors */}
 
-        <Route exact path="/" component={Home} />
-        <Route exact path="/home" component={Home} />
+        <Route exact path="/" component={BannerFormatter} />
+        <Route exact path="/home" component={BannerFormatter} />
         <Route exact path="/banner" component={BannerFormatter} />
         <Route exact path="/storelist" component={StoreListFormatter} />
         <Route exact path="/subjectlines" component={SubjectlineFormatter} />
