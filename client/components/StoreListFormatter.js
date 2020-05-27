@@ -33,16 +33,14 @@ updateValue(e) {
           <div id="form-2">
             <h2>unformatted</h2>
             <p>input store list below separeted by a comma</p>
-            <input class="storeContainerInput" id="inputContainter" onChange={this.updateValue}/>
+            <textarea className="storeContainer sm" id="inputContainter" onChange={this.updateValue}/>
           </div>
           <div>
             <h2>formatted</h2>
             <p>updated list will populate after stores are entered</p>
-            <textarea class="storeContainer" id="list"></textarea>
+            <textarea className="storeContainer sm" id="list" />
           </div>
         </div>
-        <br/><br/>
-        <br/><br/>
       </>
     )
   }

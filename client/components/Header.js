@@ -4,9 +4,28 @@ import history from '../history'
 export default class Header extends Component {
   constructor(){
     super()
-    this.state: {
+    this.state = {
       location: ""
     }
+  }
+
+  componentDidMount() {
+    this.setState({
+      location: history.location.pathname
+    })
+  }
+
+
+  navHandler(evt) {
+    let id = evt.target.id
+    let links = document.querySelectorAll("div.nav-item")
+    links.forEach(link => {
+      link.classList.remove('active')})
+    this.setState({
+      location: id
+    })
+    document.getElementById(id).classList.add('active')
+    history.push(`/${id}`)
   }
 
   render() {
@@ -17,9 +36,9 @@ export default class Header extends Component {
           <div className="nav-title">DPC Toolkit</div>
         </div>
         <div className="flex-container">
-          <div name="banner" className="nav-item" onClick={() => history.push('/banner')}>Banner Formatter</div>
-          <div name="storelist" className="nav-item" onClick={() => history.push('/storelist')}>Store List Formatter</div>
-          <div name="subjectline" className="nav-item" onClick={() => history.push('/subjectlines')}>Subject Line Formatter</div>
+          <div id="banner" className="nav-item" onClick={(evt) => this.navHandler(evt)}>Banner Formatter</div>
+          <div id="storelist" className="nav-item" onClick={(evt) => this.navHandler(evt)}>Store List Formatter</div>
+          <div id="subjectlines" className="nav-item" onClick={(evt) => this.navHandler(evt)}>Subject Line Formatter</div>
         </div>
       </div>
     )
