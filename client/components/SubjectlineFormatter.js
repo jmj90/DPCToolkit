@@ -11,22 +11,26 @@ formatSubjectlines(e) {
     fr_stat: document.getElementById('sl-fr-stat').value,
   }
 
-  let formattedEN_DYN = 'var enSubject = "' + sl.en_dyn.replace('$PRICE$', '$" + pricePlaceHolder + "') + '";'
-  let formattedFR_DYN = 'var frSubject = "' + sl.fr_dyn.replace('$PRICE$', '" + pricePlaceHolder + " $') + '";'
+  let formattedEN_DYN = "EN: " + sl.en_dyn.replace('$PRICE$', '$<%= context.targetData.offer_price_1_en %>')
+  let formattedFR_DYN = "FR: "  + sl.fr_dyn.replace('$PRICE$', '<%= context.targetData.offer_price_1_fr %> $')
 
   document.getElementById('list').innerHTML = `
-  ${formattedEN_DYN}
-  ${formattedFR_DYN}
+  Static Subject Lines:
+  EN: ${sl.en_stat}
 
-  var enSubjectStatic = "${sl.en_stat}";
-  var frSubjectStatic = "${sl.fr_stat}";
-  `
+  FR: ${sl.fr_stat}
+
+  Dynamic Subject Lines:
+  ${formattedEN_DYN}
+
+  ${formattedFR_DYN}`
 }
 
 
   render(){
     return (
       <>
+      <p className="text-small">updated to ACS format [08/27/2020]</p>
       <h1 style={{margin: "0px"}}>Subject Line Formatter</h1>
       <p>type <b>$PRICE$</b> where amount should go</p>
         <div className="container">

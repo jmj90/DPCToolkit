@@ -162,3 +162,8 @@ button:hover {
 .sm {
   height: 60px !important
 }
+
+.text-small {
+  font-size: 10px;
+  margin: 0
+}
