@@ -14,7 +14,8 @@ formatSubjectlines(e) {
   let formattedEN_DYN = "EN: " + sl.en_dyn.replace('$PRICE$', '$<%= context.targetData.offer_price_1_en %>')
   let formattedFR_DYN = "FR: "  + sl.fr_dyn.replace('$PRICE$', '<%= context.targetData.offer_price_1_fr %> $')
 
-  document.getElementById('list').innerHTML = `**Static Subject Lines:**
+  document.getElementById('list').innerHTML =
+  `**Static Subject Lines:**
 
 EN: ${sl.en_stat}
 
@@ -25,6 +26,14 @@ FR: ${sl.fr_stat}
 ${formattedEN_DYN}
 
 ${formattedFR_DYN}`
+  }
+
+  copyText() {
+  var copyText = document.getElementById("list");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); /*For mobile devices*/
+  document.execCommand("copy");
+  alert("Copied!");
 }
 
 
@@ -53,9 +62,10 @@ ${formattedFR_DYN}`
             <textarea className="storeContainer sm" id="sl-fr-stat"
               placeholder="... garnitures à un prix fabuleux!" />
           </div>
-          <div>
+          <div className="flex-column">
             <h2>Copy this code</h2>
             <textarea className="storeContainer" readOnly id="list" />
+            <button onClick={this.copyText}>copy</button>
           </div>
         </div>
         <button onClick={(evt) => this.formatSubjectlines(evt)}>submit</button>
