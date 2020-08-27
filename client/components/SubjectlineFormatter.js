@@ -14,16 +14,17 @@ formatSubjectlines(e) {
   let formattedEN_DYN = "EN: " + sl.en_dyn.replace('$PRICE$', '$<%= context.targetData.offer_price_1_en %>')
   let formattedFR_DYN = "FR: "  + sl.fr_dyn.replace('$PRICE$', '<%= context.targetData.offer_price_1_fr %> $')
 
-  document.getElementById('list').innerHTML = `
-  Static Subject Lines:
-  EN: ${sl.en_stat}
+  document.getElementById('list').innerHTML = `**Static Subject Lines:**
 
-  FR: ${sl.fr_stat}
+EN: ${sl.en_stat}
 
-  Dynamic Subject Lines:
-  ${formattedEN_DYN}
+FR: ${sl.fr_stat}
 
-  ${formattedFR_DYN}`
+**Dynamic Subject Lines:**
+
+${formattedEN_DYN}
+
+${formattedFR_DYN}`
 }
 
 
