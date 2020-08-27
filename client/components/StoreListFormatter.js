@@ -32,7 +32,7 @@ updateValue(e) {
         <div className="container">
           <div id="form-2">
             <h2>unformatted</h2>
-            <p>input store list below separeted by a comma</p>
+            <p>input store list below separated by a comma</p>
             <textarea className="storeContainer sm" id="inputContainter" onChange={this.updateValue}/>
           </div>
           <div>
