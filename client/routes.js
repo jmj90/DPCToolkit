@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 import {connect} from 'react-redux'
 import {withRouter, Route, Switch} from 'react-router-dom'
 import PropTypes from 'prop-types'
-import { Home, BannerFormatter, StoreListFormatter, SubjectlineFormatter } from './components'
+import { Home, BannerFormatter, StoreListFormatter, SubjectlineFormatter, ReynoldsFormatter } from './components'
 import fetchContacts from './store'
 
 
@@ -22,6 +22,7 @@ class Routes extends Component {
         <Route exact path="/banner" component={BannerFormatter} />
         <Route exact path="/storelist" component={StoreListFormatter} />
         <Route exact path="/subjectlines" component={SubjectlineFormatter} />
+        <Route exact path="/rjr" component={ReynoldsFormatter} />
         {/* Displays our Login component as a fallback */}
         {/*<Route component={Construction} /> */}
         <Route component={Home} />

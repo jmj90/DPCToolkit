@@ -23,12 +23,21 @@ a {
 
 .flex-column {
   display: flex;
-  flex-direction: column;
+  flex-direction: column !important;
+}
+
+.flex-center {
+  align-items: center;
 }
 
 .active {
   background-color: #3503BC;
   color: white;
+}
+
+.hidden {
+  opacity: 0;
+  transition: 2s;
 }
 
 .nav-title {
@@ -95,7 +104,6 @@ a {
 #form-2 {
   margin-right: 1rem;
 }
-
 
 input {
   text-align: top;
@@ -168,7 +176,20 @@ button:hover {
   height: 60px !important
 }
 
+.xsm {
+  height: 30px !important;
+}
+
 .text-small {
   font-size: 10px;
   margin: 0
+}
+
+.text-12 {
+  font-size: 12px;
+  margin: 0
+}
+
+.text-center {
+  text-align: center;
 }

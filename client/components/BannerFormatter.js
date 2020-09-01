@@ -24,24 +24,24 @@ export default class BannerFormatter extends Component {
     }
 
     let formatted = `
-      var ${obj.name} = {
-          img: {
-              en: "Banner_${obj.name}_${obj.w}x${obj.h}_EN.jpg",
-              fr: "Banner_${obj.name}_${obj.w}x${obj.h}_FR.jpg" ,
-              en_on: "Banner_${obj.name}_${obj.w}x${obj.h}_ON_EN.jpg",
-              fr_on: "Banner_${obj.name}_${obj.w}x${obj.h}_ON_FR.jpg"
-          },
-          url: {
-              en: "${obj.urlen}",
-              fr: "${obj.urlfr}"
-          },
-          width: "${obj.w}",
-          height: "${obj.h}",
-          altText: {
-              en: "${obj.alten}",
-              fr: "${obj.altfr}"
-          }
-      };
+var ${obj.name} = {
+  img: {
+    en: "Banner_${obj.name}_${obj.w}x${obj.h}_EN.jpg",
+    fr: "Banner_${obj.name}_${obj.w}x${obj.h}_FR.jpg" ,
+    en_on: "Banner_${obj.name}_${obj.w}x${obj.h}_ON_EN.jpg",
+    fr_on: "Banner_${obj.name}_${obj.w}x${obj.h}_ON_FR.jpg"
+  },
+  url: {
+    en: "${obj.urlen}",
+    fr: "${obj.urlfr}"
+  },
+  width: "${obj.w}",
+  height: "${obj.h}",
+  altText: {
+    en: "${obj.alten}",
+    fr: "${obj.altfr}"
+  }
+};
     `
     document.getElementById('list').innerHTML = formatted
   }
