@@ -27,7 +27,7 @@ export default class ReynoldsFormatter extends Component {
       storeFormat = str.slice(6, str.length-2)
     }
     storeFormat.forEach((el, idx) => { el.length && store.push(el) })
-    store = store.join("_")
+    store = store.join("_").toUpperCase()
     let storeCode = str[str.length-1]
     let offerType = str[2]
     if(offerType.length <= 3) { offerType = str[4] }
