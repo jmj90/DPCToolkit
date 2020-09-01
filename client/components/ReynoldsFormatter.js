@@ -13,12 +13,14 @@ export default class ReynoldsFormatter extends Component {
     let str = document.getElementById("offerCode").value.trim()
     str = str.split(" ")
     // user variables
+    let brandOverride = document.getElementById("brand").value
     let fq = document.getElementById("fq").value
     let price = document.getElementById("price").value
     let quantity = document.getElementById("quantity").value
     // pulled variables
     let store = []
     let brand = str[1]
+    if (brandOverride.length) { brand = brandOverride }
     let storeFormat = str.slice(3, str.length-1)
     if(typeCheck(brand)) {
       brand = str[2]
@@ -64,6 +66,8 @@ export default class ReynoldsFormatter extends Component {
             <textarea className="storeContainer xsm" id="offerCode"
               placeholder="offer code" /><br/>
             <h4>Variables</h4>
+            <label>Brand Override</label> <br/>
+            <input id="brand"/> <br/>
             <label>Frequency</label> <br/>
             <input id="fq"/> <br/>
             <label>Price</label> <br/>
