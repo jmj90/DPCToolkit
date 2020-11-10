@@ -37,6 +37,7 @@ export default class Header extends Component {
         </div>
         <div className="flex-container">
           <div id="banner" className="nav-item" onClick={(evt) => this.navHandler(evt)}>Banner Formatter</div>
+          <div id="badstores" className="nav-item" onClick={(evt) => this.navHandler(evt)}>Bad Stores Formatter</div>
           <div id="storelist" className="nav-item" onClick={(evt) => this.navHandler(evt)}>Store List Formatter</div>
           <div id="subjectlines" className="nav-item" onClick={(evt) => this.navHandler(evt)}>Subject Line Formatter</div>
         </div>

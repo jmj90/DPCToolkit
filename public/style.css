@@ -172,6 +172,10 @@ button:hover {
   border-radius: 10px;
 }
 
+.md {
+  height: 100px !important
+}
+
 .sm {
   height: 60px !important
 }
