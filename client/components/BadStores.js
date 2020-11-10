@@ -8,7 +8,7 @@ export default class BadStores extends Component {
     let list = [];
     let input = document.getElementById('badstorelist').value.split(',')
     input.forEach(el => {
-      list.push(`([target/@custStore_number] = ${el.trim()})`)
+      list.push(`([target/@cusStore_number] = ${el.trim()})`)
     })
     list = list.join().replace(/,/g, ' OR ').split();
     document.getElementById("formatted").innerHTML = list
