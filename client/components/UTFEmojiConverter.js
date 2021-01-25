@@ -58,8 +58,13 @@ convert(evt) {
     return (
       <>
       <h1 style={{margin: "0px"}}>UTF Emoji Converter</h1>
-      <p>Enter the subject line with special characters to convert into UTF format. If using a dynamic variable, select your variable type or enter a custom one.</p>
-      <p className="text-small">If using a dynamic variable, please replace the entire variable in the subject line with: DYNPRICE</p>
+
+      <p>
+        1. Enter the subject line with emojis or special characters to convert into UTF format.<br/>
+        2. If using a dynamic variable, select your variable type or enter a custom one.<br/>
+        3. If using a dynamic variable, please replace the entire variable in the subject line with: DYNPRICE
+      </p>
+
         <div className="container flex-column flex-center">
           <div className="flex-column flex-center" id="form-2">
             <p>Enter subject line below</p>
