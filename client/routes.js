@@ -8,15 +8,12 @@ import {
   StoreListFormatter,
   SubjectlineFormatter,
   ReynoldsFormatter,
-  BadStores } from './components'
-import fetchContacts from './store'
+  UTFEmojiConverter,
+  BadStores
+} from './components'
 
 
 class Routes extends Component {
-
-  componentDidMount () {
-
-  }
 
   render () {
     return (
@@ -28,7 +25,7 @@ class Routes extends Component {
         <Route exact path="/banner" component={BannerFormatter} />
         <Route exact path="/badstores" component={BadStores} />
         <Route exact path="/storelist" component={StoreListFormatter} />
-        <Route exact path="/subjectlines" component={SubjectlineFormatter} />
+        <Route exact path="/utfconverter" component={UTFEmojiConverter} />
         <Route exact path="/rjr" component={ReynoldsFormatter} />
         {/* Displays our Login component as a fallback */}
         {/*<Route component={Construction} /> */}

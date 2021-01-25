@@ -11,8 +11,8 @@ formatSubjectlines(e) {
     fr_stat: document.getElementById('sl-fr-stat').value,
   }
 
-  let formattedEN_DYN = "EN: " + sl.en_dyn.replace('$PRICE$', '$<%= context.targetData.offer_price_1_en %>')
-  let formattedFR_DYN = "FR: "  + sl.fr_dyn.replace('$PRICE$', '<%= context.targetData.offer_price_1_fr %> $')
+  let formattedEN_DYN = "EN: " + sl.en_dyn.replace('DYNPRICE', '$<%= context.targetData.offer_price_1_en %>')
+  let formattedFR_DYN = "FR: "  + sl.fr_dyn.replace('DYNPRICE', '<%= context.targetData.offer_price_1_fr %> $')
 
   document.getElementById('list').innerHTML =
   `**Static Subject Lines:**
@@ -42,13 +42,13 @@ ${formattedFR_DYN}`
       <>
       <p className="text-small">updated to ACS format [08/27/2020]</p>
       <h1 style={{margin: "0px"}}>Subject Line Formatter</h1>
-      <p>type <b>$PRICE$</b> where amount should go</p>
+      <p>type <b>DYNPRICE</b> where amount should go</p>
         <div className="container">
           <div id="form-2">
             <h2>Enter subject lines</h2>
             <label>English Dynamic</label><br/>
             <textarea className="storeContainer sm" id="sl-en-dyn"
-              placeholder="... large pizza for just $PRICE$!" />
+              placeholder="... large pizza for just DYNPRICE!" />
             <br/>
             <label>English Static</label><br/>
             <textarea className="storeContainer sm" id="sl-en-stat"
@@ -56,7 +56,7 @@ ${formattedFR_DYN}`
             <br/>
             <label>French Dynamic</label><br/>
             <textarea className="storeContainer sm" id="sl-fr-dyn"
-              placeholder="... garnitures pour seulement $PRICE$!" />
+              placeholder="... garnitures pour seulement DYNPRICE!" />
             <br/>
             <label>French Static</label><br/>
             <textarea className="storeContainer sm" id="sl-fr-stat"
