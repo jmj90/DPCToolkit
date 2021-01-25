@@ -37,7 +37,7 @@ convert(evt) {
   }
   if(variable) {
     variable = '?=' + variable + '=?utf-8?Q?'
-    encoded = toMime(str).replace('DYNPRICE', variable)
+    encoded = toMime(str).replace('DYNVAR', variable)
   } else {
     encoded = toMime(str)
   }
@@ -62,14 +62,14 @@ convert(evt) {
       <p>
         1. Enter the subject line with emojis or special characters to convert into UTF format.<br/>
         2. If using a dynamic variable, select your variable type or enter a custom one.<br/>
-        3. If using a dynamic variable, please replace the entire variable in the subject line with: DYNPRICE
+      3. If using a dynamic variable, please replace the entire variable in the subject line with: DYNVAR
       </p>
 
         <div className="container flex-column flex-center">
           <div className="flex-column flex-center" id="form-2">
             <p>Enter subject line below</p>
             <textarea className="storeContainer sm" id="sl"
-              placeholder="... large pizza for just DYNPRICE!" />
+              placeholder="... large pizza for just DYNVAR!" />
             <p>Select variable type</p>
             <select id="selector">
               <option selected="selected" value=""> None/static </option>
@@ -92,4 +92,4 @@ convert(evt) {
   }
 }
 
-// 🚗 Get unlimited medium 2-topping pizzas 🍕🍕 delivered for DYNPRICE each.
+// 🚗 Get unlimited medium 2-topping pizzas 🍕🍕 delivered for DYNVAR each.
