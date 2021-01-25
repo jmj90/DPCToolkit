@@ -73,8 +73,8 @@ convert(evt) {
             <p>Select variable type</p>
             <select id="selector">
               <option selected="selected" value=""> None/static </option>
-              <option value="ACS_EN_DYN"> ACS English </option>
-              <option value="ACS_FR_DYN"> ACS French </option>
+              <option value="ACS_EN_DYN"> ACS English Price </option>
+              <option value="ACS_FR_DYN"> ACS French Price </option>
             </select>
             <p>or enter custom variable string</p>
             <input id="customselector" />
