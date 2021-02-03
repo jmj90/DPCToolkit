@@ -69,7 +69,7 @@ convert(evt) {
       </p>
 
         <div className="container flex-column flex-center">
-          <div className="flex-column flex-center" id="form-2">
+          <div className="flex-column flex-center" id="form">
             <p>Enter subject line below</p>
             <textarea className="storeContainer sm" id="sl"
               placeholder="... large pizza for just DYNVAR!" />
