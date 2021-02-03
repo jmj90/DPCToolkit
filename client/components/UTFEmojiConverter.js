@@ -42,7 +42,7 @@ convert(evt) {
     encoded = toMime(str)
   }
 
-  document.getElementById('list').innerHTML = encoded
+  document.getElementById('list').innerHTML = "'" + encoded
   }
 
   copyText() {
@@ -50,7 +50,10 @@ convert(evt) {
   copyText.select();
   copyText.setSelectionRange(0, 99999); /*For mobile devices*/
   document.execCommand("copy");
-  alert("Copied!");
+  document.getElementById("copied").innerHTML = "Copied!"
+  setTimeout(() => {
+    document.getElementById("copied").innerHTML = "";
+  }, 3000);
 }
 
 
@@ -82,7 +85,10 @@ convert(evt) {
           <button onClick={(evt) => this.convert(evt)}>submit</button>
           <br/>
           <div className="flex-column">
-            <h2>Copy this code</h2>
+            <div className="flex-row flex-center">
+              <h2 className="mr-1">Copy this code</h2>
+                <h2 id="copied"></h2>
+              </div>
             <textarea className="storeContainer md" readOnly id="list" />
             <button onClick={this.copyText}>copy</button>
           </div>
