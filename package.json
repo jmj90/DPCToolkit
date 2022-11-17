@@ -24,7 +24,7 @@
     "koa": "^2.7.0",
     "koa-session": "^5.10.1",
     "morgan": "^1.9.1",
-    "next": ">=9.3.2",
+    "next": ">=13.0.3",
     "nonce": "^1.0.4",
     "pg": "^7.6.0",
     "react": "^16.5.1",
@@ -67,6 +67,6 @@
     "babel-preset-stage-2": "^6.24.1",
     "nodemon": "^1.18.4",
     "webpack": "^4.19.0",
-    "webpack-cli": "^3.1.0"
+    "webpack-cli": "^3.3.12"
   }
 }
