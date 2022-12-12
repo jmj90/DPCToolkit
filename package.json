@@ -17,7 +17,7 @@
     "compression": "^1.7.3",
     "cookie": "^0.3.1",
     "dotenv": "^6.2.0",
-    "express": "^4.16.3",
+    "express": "^4.17.3",
     "express-sslify": "^1.2.0",
     "history": "^4.6.3",
     "isomorphic-fetch": "^2.2.1",
